@@ -44,3 +44,6 @@ app.use(function(err,req,res,next){
 server.listen(PORT, () => {
   console.log(`Server started at port ${PORT}`)
 })
+
+const authRoutes = require('./routes/auth');
+const userRoutes = require('./routes/user');
