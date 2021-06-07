@@ -1,0 +1,37 @@
+{
+  "name": "nodeservertest",
+  "version": "1.0.0",
+  "description": "project test",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dongtranthien/nodeServerTest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dongtranthien/nodeServerTest/issues"
+  },
+  "homepage": "https://github.com/dongtranthien/nodeServerTest#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.11.1",
+    "formidable": "^1.2.2",
+    "fs": "0.0.1-security",
+    "lodash": "^4.17.21",
+    "mongoose": "^5.12.13",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.6.1",
+    "save": "^2.4.0",
+    "socket.io": "^4.1.2",
+    "uuid": "^8.3.2"
+  }
+}
