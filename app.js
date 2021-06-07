@@ -4,8 +4,7 @@ const http = require("http");
 const app = express();
 
 const server =http.createServer(app);
-//const io = require("socket.io").listen(server);
-
+const io = require('socket.io')(server);
 const mongoose = require('mongoose');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
@@ -30,5 +29,5 @@ mongoose.connection.on('error', err => {
 app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use(cookieParser());
-//app.use(expressValidator());
+app.use(expressValidator());
 app.use(cors());
