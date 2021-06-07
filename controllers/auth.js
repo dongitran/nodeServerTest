@@ -56,7 +56,7 @@ exports.signin = (req,res) => {
         }
         
         //generate token with user id and secret 
-        const token = jwt.sign({_id: user._id}, 'ideaApp' );
+        const token = jwt.sign({_id: user._id}, "ideaApp" );
         //persist the token as 't' in cookie with expiry date
         res.cookie("t", token, { expire: new Date() + 9999 });
         //return response with user and token to frontend client
@@ -74,9 +74,9 @@ exports.signout = (req,res) => {
 exports.requireSignin = expressJwt({
     // if the token is valid, express jwt appends the verified users id
     // in an auth key to request object
-    secret: 'ideaApp',
+    secret: "ideaApp",
     userProperty: "auth",
-    algorithms:['RS256']
+    algorithms:['RS256','sha256','HS256']
 });
 
 
@@ -99,7 +99,7 @@ exports.forgotPassword = (req, res) => {
         // generate a token with user id and secret
         const token = jwt.sign(
             { _id: user._id, iss: "NODEAPI" },
-            'ideaApp'
+            "ideaApp"
         );
 
         // email data
@@ -171,7 +171,7 @@ exports.socialLogin = (req, res) => {
             // generate a token with user id and secret
             const token = jwt.sign(
                 { _id: user._id, iss: "NODEAPI" },
-                'ideaApp'
+                "ideaApp"
             );
             res.cookie("t", token, { expire: new Date() + 9999 });
             const { _id, name, email } = user;
@@ -185,7 +185,7 @@ exports.socialLogin = (req, res) => {
             // generate a token with user id and secret
             const token = jwt.sign(
                 { _id: user._id, iss: "NODEAPI" },
-                'ideaApp'
+                "ideaApp"
             );
             res.cookie("t", token, { expire: new Date() + 9999 });
             // return response with user and token to frontend client
