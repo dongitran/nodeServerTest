@@ -16,6 +16,9 @@ http://localhost:8080/signup
 }
 ```
 <b>Response</b>
+```json
+
+```
 ***
 <h3>Signin</h3>
 
@@ -31,6 +34,53 @@ http://localhost:8080/signin
 ```
 
 <b>Response</b>
-***
+```json
 
+```
+***
+<h3>Signout</h3>
+
+http://localhost:8080/signout
+
+<b>Request</b>
+
+```json
+
+```
+
+<b>Response</b>
+```json
+
+```
+***
+<h3>Forgot password</h3>
+
+http://localhost:8080/forgot-password
+
+<b>Request</b>
+
+```json
+
+```
+
+<b>Response</b>
+```json
+
+```
+***
+<h3>Reset password</h3>
+
+http://localhost:8080/reset-password
+
+<b>Request</b>
+
+```json
+
+```
+
+<b>Response</b>
+```json
+
+```
+***
 
