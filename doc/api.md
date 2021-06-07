@@ -5,6 +5,8 @@
 
 <h3>Signup</h3>
 
+http://localhost:8080/signup
+
 <b>Request</b>
 ```json
 {
@@ -16,6 +18,9 @@
 <b>Response</b>
 ***
 <h3>Signin</h3>
+
+http://localhost:8080/signin
+
 <b>Request</b>
 
 ```json
