@@ -47,3 +47,6 @@ server.listen(PORT, () => {
 
 const authRoutes = require('./routes/auth');
 const userRoutes = require('./routes/user');
+
+app.use('/', authRoutes);
+app.use('/', userRoutes);
