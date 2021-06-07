@@ -3,8 +3,9 @@
 
 ***
 
-Signup:
+<h3>Signup</h3>
 
+<b>Request</b>
 ```json
 {
   "name":"thiendong",
@@ -12,5 +13,19 @@ Signup:
   "password":"123456"
 }
 ```
+<b>Response</b>
+***
+<h3>Signin</h3>
+<b>Request</b>
+
+```json
+{
+  "email":"thiendong.iuh@gmail.com",
+  "password":"123456"
+}
+```
+
+<b>Response</b>
+***
 
 
